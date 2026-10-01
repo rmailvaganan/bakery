@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Crust Bakery</title>
+<style>
+  :root { --cream:#fff8ee; --brown:#5a3825; --gold:#d98c2b; --text:#3b2a20; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,serif; background:var(--cream); color:var(--text); line-height:1.6; }
+  header { background:var(--brown); color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+  header a { color:#fff; text-decoration:none; margin-left:18px; }
+  .hero { text-align:center; padding:90px 20px; background:linear-gradient(#f3d9aa,#fff8ee); }
+  .hero h1 { font-size:2.8rem; color:var(--brown); }
+  .hero p { font-size:1.2rem; margin:12px 0 24px; }
+  .btn { display:inline-block; background:var(--gold); color:#fff; padding:14px 28px; border-radius:30px; text-decoration:none; font-weight:bold; }
+  section { max-width:900px; margin:0 auto; padding:56px 20px; }
+  h2 { color:var(--brown); margin-bottom:16px; text-align:center; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+  .card { background:#fff; padding:24px; border-radius:12px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+  .card span { font-size:2.4rem; }
+  footer { background:var(--brown); color:#fff; text-align:center; padding:32px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <strong>Golden Crust Bakery</strong>
+  <nav><a href="#about">About</a><a href="#products">Products</a><a href="#visit">Visit</a></nav>
+</header>
+
+<div class="hero">
+  <h1>Baked fresh, every morning</h1>
+  <p>Handmade bread, pastries and cakes from our family oven to your table.</p>
+  <a class="btn" href="#visit">Visit us today</a>
+</div>
+
+<section id="about">
+  <h2>Our story</h2>
+  <p>For over 20 years we've baked with simple ingredients, slow fermentation and a lot of care. Everything is made on site, before sunrise, so it's fresh when you walk in.</p>
+</section>
+
+<section id="products">
+  <h2>Signature bakes</h2>
+  <div class="grid">
+    <div class="card"><span>🥖</span><h3>Sourdough Loaf</h3><p>Crisp crust, soft tangy crumb.</p></div>
+    <div class="card"><span>🥐</span><h3>Butter Croissant</h3><p>Flaky, golden and buttery.</p></div>
+    <div class="card"><span>🎂</span><h3>Celebration Cakes</h3><p>Made to order for any occasion.</p></div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2>Come and see us</h2>
+  <div class="card">
+    <p><strong>12 High Street, Yourtown</strong></p>
+    <p>Mon–Sat 7am–5pm · Sun 8am–2pm</p>
+    <p>Tel: 01234 567890</p>
+  </div>
+</section>
+
+<footer>&copy; 2026 Golden Crust Bakery. A demo website.</footer>
+</body>
+</html>
